@@ -3,7 +3,7 @@
 using namespace std;
 
 
-
+//Klasa która przechowóje wartości i jest wykorzystywana jako element listy
 class Element {
 public:
     int wartosc;
@@ -13,6 +13,7 @@ public:
     Element(int wartosc): wartosc(wartosc), poprzedni(nullptr), nastepny(nullptr) {}
 };
 
+//Klasa która tworzy obiekty Element metodą fabryki
 class Fabryka {
 public:
     static Element* utworz(int wartosc) {
