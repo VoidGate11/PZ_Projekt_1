@@ -78,8 +78,6 @@ public:
         : glowa(nullptr), ogon(nullptr), rozmiar(0), iterator(nullptr) {
     }
 
-    // Lista nie może być kopiowana płytko,
-    // ponieważ jej węzły są zarządzane dynamicznie.
     ListaDwukierunkowa(const ListaDwukierunkowa&) = delete;
     ListaDwukierunkowa& operator=(const ListaDwukierunkowa&) = delete;
 
@@ -95,7 +93,6 @@ public:
         return rozmiar == 0;
     }
 
-    // Dodawanie na początek
     void dodajNaPoczatek(int wartosc) {
         Element* nowy = Fabryka::utworz(wartosc);
 
@@ -113,7 +110,6 @@ public:
         iterator.ustaw(glowa);
     }
 
-    // Dodawanie na koniec
     void dodajNaKoniec(int wartosc) {
         Element* nowy = Fabryka::utworz(wartosc);
 
@@ -131,7 +127,6 @@ public:
         iterator.ustaw(glowa);
     }
 
-    // Dodawanie pod wskazany indeks
     void dodajPodIndeks(int indeks, int wartosc) {
         sprawdzIndeksDodawania(indeks);
 
@@ -162,7 +157,6 @@ public:
         iterator.ustaw(glowa);
     }
 
-    // Usuwanie z początku
     void usunZPoczatku() {
         if (pusta()) {
             throw std::out_of_range("Lista jest pusta.");
@@ -183,7 +177,6 @@ public:
         iterator.ustaw(glowa);
     }
 
-    // Usuwanie z końca
     void usunZKonca() {
         if (pusta()) {
             throw std::out_of_range("Lista jest pusta.");
@@ -204,7 +197,6 @@ public:
         iterator.ustaw(glowa);
     }
 
-    // Usuwanie pod wskazanym indeksem
     void usunPodIndeks(int indeks) {
         sprawdzIndeksUsuwania(indeks);
 
@@ -232,7 +224,6 @@ public:
         iterator.ustaw(glowa);
     }
 
-    // Wyświetlanie od początku do końca
     void wyswietl() const {
         Element* obecny = glowa;
 
@@ -246,7 +237,6 @@ public:
         std::cout << '\n';
     }
 
-    // Wyświetlanie od końca do początku
     void wyswietlOdwrotnie() const {
         Element* obecny = ogon;
 
@@ -260,7 +250,6 @@ public:
         std::cout << '\n';
     }
 
-    // Wyświetlanie następnego elementu iteratora
     void wyswietlNastepny() {
         int wartosc;
 
@@ -273,7 +262,6 @@ public:
         }
     }
 
-    // Wyświetlanie poprzedniego elementu iteratora
     void wyswietlPoprzedni() {
         int wartosc;
 
@@ -286,7 +274,6 @@ public:
         }
     }
 
-    // Usuwanie wszystkich elementów
     void wyczysc() {
         Element* obecny = glowa;
 
