@@ -22,22 +22,18 @@ int main()
     cout << "Z indeksu: \n";
     lista.dodajPodIndeks(2, 30);
 
-    // Oczekiwany wynik: 10 20 30 40 50
     lista.wyswietl();
 
     cout << "\n=== Wyswietlenie odwrotne ===\n";
 
-    // Oczekiwany wynik: 50 40 30 20 10
     lista.wyswietlOdwrotnie();
 
     cout << "\n=== Iterator ===\n";
 
-    // Iterator zaczyna od początku listy.
     lista.wyswietlNastepny();
     lista.wyswietlNastepny();
     lista.wyswietlNastepny();
 
-    // Iterator znajduje się teraz na elemencie 40.
     lista.wyswietlPoprzedni();
     lista.wyswietlPoprzedni();
 

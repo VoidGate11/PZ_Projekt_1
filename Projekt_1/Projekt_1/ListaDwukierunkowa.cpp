@@ -12,19 +12,6 @@ private:
     Element* ogon;
     int rozmiar;
     Iterator iterator;
-
-    void sprawdzIndeksDodawania(int indeks) const {
-        if (indeks < 0 || indeks > rozmiar) {
-            throw std::out_of_range("Nieprawidlowy indeks dodawania.");
-        }
-    }
-
-    void sprawdzIndeksUsuwania(int indeks) const {
-        if (indeks < 0 || indeks >= rozmiar) {
-            throw std::out_of_range("Nieprawidlowy indeks usuwania.");
-        }
-    }
-
 public:
     ListaDwukierunkowa()
         : glowa(nullptr), ogon(nullptr), rozmiar(0), iterator(nullptr) {
@@ -36,7 +23,7 @@ public:
     ~ListaDwukierunkowa() {
         wyczysc();
     }
-
+    // Metoda ktora dodaje element na poczatek
     void dodajNaPoczatek(int wartosc) {
         Element* nowy = Fabryka::utworz(wartosc);
 
@@ -53,7 +40,7 @@ public:
         ++rozmiar;
         iterator.ustaw(glowa);
     }
-
+    // Metoda ktora dodaje element na koniec
     void dodajNaKoniec(int wartosc) {
         Element* nowy = Fabryka::utworz(wartosc);
 
@@ -70,9 +57,8 @@ public:
         ++rozmiar;
         iterator.ustaw(glowa);
     }
-
+    // Metoda ktora dodaje element pod indeksem
     void dodajPodIndeks(int indeks, int wartosc) {
-        sprawdzIndeksDodawania(indeks);
 
         if (indeks == 0) {
             dodajNaPoczatek(wartosc);
@@ -100,7 +86,7 @@ public:
         ++rozmiar;
         iterator.ustaw(glowa);
     }
-
+    // Metoda ktora usuwa element z poczatku
     void usunZPoczatku() {
 
         Element* usuwany = glowa;
@@ -117,7 +103,7 @@ public:
         --rozmiar;
         iterator.ustaw(glowa);
     }
-
+    // Metoda ktora usuwa element z konca
     void usunZKonca() {
 
         Element* usuwany = ogon;
@@ -134,9 +120,8 @@ public:
         --rozmiar;
         iterator.ustaw(glowa);
     }
-
+    // Metoda ktora usuwa element pod indeksem
     void usunPodIndeks(int indeks) {
-        sprawdzIndeksUsuwania(indeks);
 
         if (indeks == 0) {
             usunZPoczatku();
@@ -161,7 +146,7 @@ public:
         --rozmiar;
         iterator.ustaw(glowa);
     }
-
+    // Metoda ktora wyswietla liste
     void wyswietl() const {
         Element* obecny = glowa;
 
@@ -174,7 +159,7 @@ public:
 
         std::cout << '\n';
     }
-
+    // Metoda ktora wyswietla liste odwrotnie
     void wyswietlOdwrotnie() const {
         Element* obecny = ogon;
 
@@ -187,7 +172,7 @@ public:
 
         std::cout << '\n';
     }
-
+    // Metoda ktora wyswietla nastepny element
     void wyswietlNastepny() {
         int wartosc;
 
@@ -199,7 +184,7 @@ public:
             std::cout << "Brak nastepnego elementu.\n";
         }
     }
-
+    // Metoda ktora wyswietla poprzedni element
     void wyswietlPoprzedni() {
         int wartosc;
 
@@ -211,7 +196,7 @@ public:
             std::cout << "Brak poprzedniego elementu.\n";
         }
     }
-
+    // Metoda ktora czysci liste
     void wyczysc() {
         Element* obecny = glowa;
 
