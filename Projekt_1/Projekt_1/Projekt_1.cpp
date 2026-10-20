@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 //Klasa która przechowóje wartości i jest wykorzystywana jako element listy
 class Element {
 public:
@@ -21,6 +20,7 @@ public:
     }
 };
 
+//Klasa która jest iteratorem
 class Iterator {
 private:
     Element* aktualny;
@@ -293,5 +293,83 @@ public:
 
 int main()
 {
-    
+    ListaDwukierunkowa lista;
+
+    std::cout << "=== DODAWANIE ELEMENTOW ===\n";
+
+    lista.dodajNaPoczatek(20);
+    lista.dodajNaPoczatek(10);
+    lista.dodajNaKoniec(40);
+    lista.dodajNaKoniec(50);
+    lista.dodajPodIndeks(2, 30);
+
+    // Oczekiwany wynik: 10 20 30 40 50
+    lista.wyswietl();
+
+    std::cout << "\n=== WYSWIETLANIE ODWROTNE ===\n";
+
+    // Oczekiwany wynik: 50 40 30 20 10
+    lista.wyswietlOdwrotnie();
+
+    std::cout << "\n=== ITERATOR ===\n";
+
+    // Iterator zaczyna od początku listy.
+    lista.wyswietlNastepny();  // 10
+    lista.wyswietlNastepny();  // 20
+    lista.wyswietlNastepny();  // 30
+
+    // Iterator znajduje się teraz na elemencie 40.
+    lista.wyswietlPoprzedni(); // 40
+    lista.wyswietlPoprzedni(); // 30
+
+    std::cout << "\n=== USUWANIE ELEMENTOW ===\n";
+
+    lista.usunZPoczatku();
+    lista.wyswietl();          // 20 30 40 50
+
+    lista.usunZKonca();
+    lista.wyswietl();          // 20 30 40
+
+    lista.usunPodIndeks(1);
+    lista.wyswietl();          // 20 40
+
+    std::cout << "\n=== INFORMACJE O LISCIE ===\n";
+
+    std::cout << "Liczba elementow: "
+        << lista.liczbaElementow() << '\n';
+
+    std::cout << "Czy lista jest pusta? "
+        << (lista.pusta() ? "Tak" : "Nie") << '\n';
+
+    std::cout << "\n=== TEST NIEPRAWIDLOWEGO INDEKSU ===\n";
+
+    try {
+        lista.usunPodIndeks(10);
+    }
+    catch (const std::out_of_range& e) {
+        std::cout << "Blad: " << e.what() << '\n';
+    }
+
+    std::cout << "\n=== CZYSZCZENIE LISTY ===\n";
+
+    lista.wyczysc();
+    lista.wyswietl();
+
+    std::cout << "Liczba elementow po czyszczeniu: "
+        << lista.liczbaElementow() << '\n';
+
+    std::cout << "Czy lista jest pusta? "
+        << (lista.pusta() ? "Tak" : "Nie") << '\n';
+
+    std::cout << "\n=== PONOWNY TEST PO CZYSZCZENIU ===\n";
+
+    lista.dodajNaKoniec(100);
+    lista.dodajNaKoniec(200);
+    lista.wyswietl();
+
+    lista.wyczysc();
+
+    std::cout << "\nKoniec testow.\n";
+
+    return 0;
 }
