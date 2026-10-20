@@ -23,6 +23,10 @@ public:
     ~ListaDwukierunkowa() {
         wyczysc();
     }
+    /**
+     * @brief Dodaje element na pocz¹tku listy.
+     * @param wartosc Wartoœæ nowego elementu.
+     */
     // Metoda ktora dodaje element na poczatek
     void dodajNaPoczatek(int wartosc) {
         Element* nowy = Fabryka::utworz(wartosc);
@@ -40,6 +44,10 @@ public:
         ++rozmiar;
         iterator.ustaw(glowa);
     }
+    /**
+     * @brief Dodaje element na koñcu listy.
+     * @param wartosc Wartoœæ nowego elementu.
+     */
     // Metoda ktora dodaje element na koniec
     void dodajNaKoniec(int wartosc) {
         Element* nowy = Fabryka::utworz(wartosc);
@@ -57,6 +65,11 @@ public:
         ++rozmiar;
         iterator.ustaw(glowa);
     }
+    /**
+     * @brief Dodaje element pod wskazanym indeksem.
+     * @param indeks Indeks wstawienia elementu.
+     * @param wartosc Wartoœæ nowego elementu.
+     */
     // Metoda ktora dodaje element pod indeksem
     void dodajPodIndeks(int indeks, int wartosc) {
 
@@ -86,6 +99,9 @@ public:
         ++rozmiar;
         iterator.ustaw(glowa);
     }
+    /**
+     * @brief Usuwa pierwszy element listy.
+     */
     // Metoda ktora usuwa element z poczatku
     void usunZPoczatku() {
 
@@ -103,6 +119,9 @@ public:
         --rozmiar;
         iterator.ustaw(glowa);
     }
+    /**
+     * @brief Usuwa ostatni element listy.
+     */
     // Metoda ktora usuwa element z konca
     void usunZKonca() {
 
@@ -120,6 +139,10 @@ public:
         --rozmiar;
         iterator.ustaw(glowa);
     }
+    /**
+     * @brief Usuwa element o wskazanym indeksie.
+     * @param indeks Indeks elementu do usuniêcia.
+     */
     // Metoda ktora usuwa element pod indeksem
     void usunPodIndeks(int indeks) {
 
@@ -146,6 +169,9 @@ public:
         --rozmiar;
         iterator.ustaw(glowa);
     }
+    /**
+     * @brief Wyœwietla elementy listy od pocz¹tku do koñca.
+     */
     // Metoda ktora wyswietla liste
     void wyswietl() const {
         Element* obecny = glowa;
@@ -159,6 +185,9 @@ public:
 
         std::cout << '\n';
     }
+    /**
+     * @brief Wyœwietla elementy listy od koñca do pocz¹tku.
+     */
     // Metoda ktora wyswietla liste odwrotnie
     void wyswietlOdwrotnie() const {
         Element* obecny = ogon;
@@ -172,6 +201,9 @@ public:
 
         std::cout << '\n';
     }
+    /**
+     * @brief Wyœwietla bie¿¹cy element iteratora i przesuwa go do przodu.
+     */
     // Metoda ktora wyswietla nastepny element
     void wyswietlNastepny() {
         int wartosc;
@@ -184,6 +216,9 @@ public:
             std::cout << "Brak nastepnego elementu.\n";
         }
     }
+    /**
+     * @brief Wyœwietla bie¿¹cy element iteratora i przesuwa go do ty³u.
+     */
     // Metoda ktora wyswietla poprzedni element
     void wyswietlPoprzedni() {
         int wartosc;
@@ -196,6 +231,9 @@ public:
             std::cout << "Brak poprzedniego elementu.\n";
         }
     }
+    /**
+     * @brief Usuwa wszystkie elementy listy i zwalnia pamiêæ.
+     */
     // Metoda ktora czysci liste
     void wyczysc() {
         Element* obecny = glowa;

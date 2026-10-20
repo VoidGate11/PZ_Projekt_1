@@ -1,0 +1,94 @@
+\doxysection{Iterator Class Reference}
+\hypertarget{class_iterator}{}\label{class_iterator}\index{Iterator@{Iterator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_iterator_a61c1fa7c5bc1e791e905b2387af6f16e}{Iterator}} (\doxymbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*}start=nullptr)
+\begin{DoxyCompactList}\small\item\em Tworzy iterator wskazuj¹cy na podany \doxylink{class_element}{Element}. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_iterator_a88624b506aa3871d31e93f84d1fcd486}{ustaw}} (\doxymbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*}wezel)
+\begin{DoxyCompactList}\small\item\em Ustawia iterator na wskazanym Elemencie. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_iterator_a36d43b100abf5fdfbecec3dd33643449}{nastepny}} (int \&wartosc)
+\begin{DoxyCompactList}\small\item\em Zwraca wartoœæ bie¿¹cego elementu i przesuwa iterator do przodu. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_iterator_a121701524d429b948855ba56ff5301e3}{poprzedni}} (int \&wartosc)
+\begin{DoxyCompactList}\small\item\em Zwraca wartoœæ bie¿¹cego elementu i przesuwa iterator do ty³u. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{class_iterator_doc-constructors}
+\Hypertarget{class_iterator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_iterator_a61c1fa7c5bc1e791e905b2387af6f16e}\index{Iterator@{Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{Iterator()}{Iterator()}}
+{\footnotesize\ttfamily \label{class_iterator_a61c1fa7c5bc1e791e905b2387af6f16e} 
+Iterator::\+\+Iterator (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*}}]{start}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Tworzy iterator wskazuj¹cy na podany \doxylink{class_element}{Element}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & Pocz¹tkowy \doxylink{class_element}{Element} iteratora. \\
+\hline
+\end{DoxyParams}
+
+
+\label{class_iterator_doc-func-members}
+\Hypertarget{class_iterator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_iterator_a36d43b100abf5fdfbecec3dd33643449}\index{Iterator@{Iterator}!nastepny@{nastepny}}
+\index{nastepny@{nastepny}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{nastepny()}{nastepny()}}
+{\footnotesize\ttfamily \label{class_iterator_a36d43b100abf5fdfbecec3dd33643449} 
+bool Iterator::\+nastepny (\begin{DoxyParamCaption}\item[{int \&}]{wartosc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca wartoœæ bie¿¹cego elementu i przesuwa iterator do przodu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & Zmienna przechowuj¹ca odczytan¹ wartoœæ. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, jeœli odczytano element, w przeciwnym razie false. 
+\end{DoxyReturn}
+\Hypertarget{class_iterator_a121701524d429b948855ba56ff5301e3}\index{Iterator@{Iterator}!poprzedni@{poprzedni}}
+\index{poprzedni@{poprzedni}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{poprzedni()}{poprzedni()}}
+{\footnotesize\ttfamily \label{class_iterator_a121701524d429b948855ba56ff5301e3} 
+bool Iterator::\+poprzedni (\begin{DoxyParamCaption}\item[{int \&}]{wartosc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Zwraca wartoœæ bie¿¹cego elementu i przesuwa iterator do ty³u. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & Zmienna przechowuj¹ca odczytan¹ wartoœæ. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, jeœli odczytano element, w przeciwnym razie false. 
+\end{DoxyReturn}
+\Hypertarget{class_iterator_a88624b506aa3871d31e93f84d1fcd486}\index{Iterator@{Iterator}!ustaw@{ustaw}}
+\index{ustaw@{ustaw}!Iterator@{Iterator}}
+\doxysubsubsection{\texorpdfstring{ustaw()}{ustaw()}}
+{\footnotesize\ttfamily \label{class_iterator_a88624b506aa3871d31e93f84d1fcd486} 
+void Iterator::\+ustaw (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*}}]{wezel}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ustawia iterator na wskazanym Elemencie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wezel} & \doxylink{class_element}{Element}, na który ma wskazywaæ iterator. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+Projekt\+\_\+1/Iterator.\+cpp\end{DoxyCompactItemize}
