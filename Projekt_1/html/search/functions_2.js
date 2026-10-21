@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nastepny_0',['nastepny',['../class_iterator.html#a36d43b100abf5fdfbecec3dd33643449',1,'Iterator']]]
+  ['iterator_0',['Iterator',['../class_iterator.html#a61c1fa7c5bc1e791e905b2387af6f16e',1,'Iterator']]]
 ];

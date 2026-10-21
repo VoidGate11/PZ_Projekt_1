@@ -112,25 +112,64 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_fabryka.
 </div><!--header-->
 <div class="contents">
 
-<p>Tworzy nowy <a class="el" href="class_element.html" title="Tworzy nowy Element listy.">Element</a> za pomoc¹ operatora new.  
+<p>Klasa tworz¹ca obiekty <a class="el" href="class_element.html" title="Klasa przechowuj¹ca wartoœci i pe³ni¹ca funkcjê elementu listy dwukierunkowej.">Element</a> z wykorzystaniem wzorca projektowego Factory.  
  <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_fabryka_8h_source.html">Fabryka.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab836cdfaad83291d78074f5abb4b81d0" id="r_ab836cdfaad83291d78074f5abb4b81d0"><td class="memItemLeft"><a id="ab836cdfaad83291d78074f5abb4b81d0" name="ab836cdfaad83291d78074f5abb4b81d0"></a>
-static <a class="el" href="class_element.html">Element</a> *&#160;</td><td class="memItemRight"><b>utworz</b> (int wartosc)</td></tr>
+<tr class="memitem:af83e76e4b9a27fce714550b70bb6b4c8" id="r_af83e76e4b9a27fce714550b70bb6b4c8"><td class="memItemLeft">static <a class="el" href="class_element.html">Element</a> *&#160;</td><td class="memItemRight"><a class="el" href="#af83e76e4b9a27fce714550b70bb6b4c8">utworz</a> (int wartosc)</td></tr>
+<tr class="memdesc:af83e76e4b9a27fce714550b70bb6b4c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy nowy <a class="el" href="class_element.html" title="Klasa przechowuj¹ca wartoœci i pe³ni¹ca funkcjê elementu listy dwukierunkowej.">Element</a> za pomoc¹ operatora new.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Tworzy nowy <a class="el" href="class_element.html" title="Tworzy nowy Element listy.">Element</a> za pomoc¹ operatora new. </p>
+<div class="textblock"><p>Klasa tworz¹ca obiekty <a class="el" href="class_element.html" title="Klasa przechowuj¹ca wartoœci i pe³ni¹ca funkcjê elementu listy dwukierunkowej.">Element</a> z wykorzystaniem wzorca projektowego Factory. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="af83e76e4b9a27fce714550b70bb6b4c8" name="af83e76e4b9a27fce714550b70bb6b4c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af83e76e4b9a27fce714550b70bb6b4c8">&#9670;&#160;</a></span>utworz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_element.html">Element</a> * Fabryka::utworz </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>wartosc</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tworzy nowy <a class="el" href="class_element.html" title="Klasa przechowuj¹ca wartoœci i pe³ni¹ca funkcjê elementu listy dwukierunkowej.">Element</a> za pomoc¹ operatora new. </p>
+<p>Tworzy nowy obiekt <a class="el" href="class_element.html" title="Klasa przechowuj¹ca wartoœci i pe³ni¹ca funkcjê elementu listy dwukierunkowej.">Element</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wartosc</td><td>Wartoœæ przechowywana w Elemencie. </td></tr>
+    <tr><td class="paramname">wartosc</td><td>Wartoœæ przechowywana w elemencie. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>WskaŸnik na utworzony <a class="el" href="class_element.html" title="Tworzy nowy Element listy.">Element</a>. </dd></dl>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>Projekt_1/<a class="el" href="_fabryka_8cpp_source.html">Fabryka.cpp</a></li>
+<dl class="section return"><dt>Returns</dt><dd>WskaŸnik na utworzony element.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wartosc</td><td>Wartoœæ przechowywana w elemencie. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>WskaŸnik na nowo utworzony element. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>Projekt_1/<a class="el" href="_fabryka_8h_source.html">Fabryka.h</a></li>
+<li>Projekt_1/<b>Fabryka.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

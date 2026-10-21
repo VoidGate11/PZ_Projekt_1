@@ -1,8 +1,12 @@
 var class_lista_dwukierunkowa =
 [
+    [ "ListaDwukierunkowa", "class_lista_dwukierunkowa.html#a5171fe8d7617c75381a2021fc73dfd2d", null ],
+    [ "ListaDwukierunkowa", "class_lista_dwukierunkowa.html#a84f7e1dbb0256f33ca7a53e23d855bf1", null ],
+    [ "~ListaDwukierunkowa", "class_lista_dwukierunkowa.html#a55ced6c1f79ed8ca34b3f406eeafd547", null ],
     [ "dodajNaKoniec", "class_lista_dwukierunkowa.html#a92899ab4746f2567e9e575157220ddec", null ],
     [ "dodajNaPoczatek", "class_lista_dwukierunkowa.html#a79c478c8903f95788334044383cbb668", null ],
     [ "dodajPodIndeks", "class_lista_dwukierunkowa.html#af3fb6a95a54ce125cc18705c859ba023", null ],
+    [ "operator=", "class_lista_dwukierunkowa.html#a9512114141565f585498b9680c132e50", null ],
     [ "usunPodIndeks", "class_lista_dwukierunkowa.html#a737d7d007d4c569326e83d53cc03afcc", null ],
     [ "usunZKonca", "class_lista_dwukierunkowa.html#ae16019e77d4e2279eb87c84727e28a9a", null ],
     [ "usunZPoczatku", "class_lista_dwukierunkowa.html#a5bfcb0897a5ab20529177642806dc131", null ],

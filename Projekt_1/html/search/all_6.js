@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['poprzedni_0',['poprzedni',['../class_iterator.html#a121701524d429b948855ba56ff5301e3',1,'Iterator']]]
+  ['operator_3d_0',['operator=',['../class_lista_dwukierunkowa.html#a9512114141565f585498b9680c132e50',1,'ListaDwukierunkowa']]]
 ];

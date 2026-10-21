@@ -2,30 +2,57 @@
 \hypertarget{class_fabryka}{}\label{class_fabryka}\index{Fabryka@{Fabryka}}
 
 
-Tworzy nowy \doxylink{class_element}{Element} za pomoc¹ operatora new.  
+Klasa tworz¹ca obiekty \doxylink{class_element}{Element} z wykorzystaniem wzorca projektowego Factory.  
 
+
+
+
+{\ttfamily \+\#include $<$Fabryka.\+h$>$}
 
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_fabryka_ab836cdfaad83291d78074f5abb4b81d0}\label{class_fabryka_ab836cdfaad83291d78074f5abb4b81d0} 
-static \doxymbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} {\bfseries utworz} (int wartosc)
-\end{DoxyCompactItemize}
+static \doxymbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} \doxymbox{\hyperlink{class_fabryka_af83e76e4b9a27fce714550b70bb6b4c8}{utworz}} (int wartosc)
+\begin{DoxyCompactList}\small\item\em Tworzy nowy \doxylink{class_element}{Element} za pomoc¹ operatora new. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+Klasa tworz¹ca obiekty \doxylink{class_element}{Element} z wykorzystaniem wzorca projektowego Factory. 
+
+\label{class_fabryka_doc-func-members}
+\Hypertarget{class_fabryka_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fabryka_af83e76e4b9a27fce714550b70bb6b4c8}\index{Fabryka@{Fabryka}!utworz@{utworz}}
+\index{utworz@{utworz}!Fabryka@{Fabryka}}
+\doxysubsubsection{\texorpdfstring{utworz()}{utworz()}}
+{\footnotesize\ttfamily \label{class_fabryka_af83e76e4b9a27fce714550b70bb6b4c8} 
+\doxymbox{\hyperlink{class_element}{Element}} \texorpdfstring{$\ast$}{*} Fabryka::\+utworz (\begin{DoxyParamCaption}\item[{int}]{wartosc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
 Tworzy nowy \doxylink{class_element}{Element} za pomoc¹ operatora new. 
+
+Tworzy nowy obiekt \doxylink{class_element}{Element}.
 
 
 \begin{DoxyParams}{Parameters}
-{\em wartosc} & Wartoœæ przechowywana w Elemencie. \\
+{\em wartosc} & Wartoœæ przechowywana w elemencie. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-WskaŸnik na utworzony \doxylink{class_element}{Element}. 
+WskaŸnik na utworzony element.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em wartosc} & Wartoœæ przechowywana w elemencie. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+WskaŸnik na nowo utworzony element. 
 \end{DoxyReturn}
 
 
-The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
 \item 
+Projekt\+\_\+1/Fabryka.\+h\item 
 Projekt\+\_\+1/Fabryka.\+cpp\end{DoxyCompactItemize}

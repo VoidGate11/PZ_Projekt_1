@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['wyczysc_0',['wyczysc',['../class_lista_dwukierunkowa.html#aa8dbd2961e855546022ec866f7f975f5',1,'ListaDwukierunkowa']]],
-  ['wyswietl_1',['wyswietl',['../class_lista_dwukierunkowa.html#aa465455ce8729c26e0ec16616ef98461',1,'ListaDwukierunkowa']]],
-  ['wyswietlnastepny_2',['wyswietlNastepny',['../class_lista_dwukierunkowa.html#ab91b605ea5c7752617ebb3ae00ac647a',1,'ListaDwukierunkowa']]],
-  ['wyswietlodwrotnie_3',['wyswietlOdwrotnie',['../class_lista_dwukierunkowa.html#a14e9cdbdde893b8e94546ed4dbfd4c18',1,'ListaDwukierunkowa']]],
-  ['wyswietlpoprzedni_4',['wyswietlPoprzedni',['../class_lista_dwukierunkowa.html#a30f3834f5b273e59b957bc9435b78c60',1,'ListaDwukierunkowa']]]
+  ['ustaw_0',['ustaw',['../class_iterator.html#a88624b506aa3871d31e93f84d1fcd486',1,'Iterator']]],
+  ['usunpodindeks_1',['usunPodIndeks',['../class_lista_dwukierunkowa.html#a737d7d007d4c569326e83d53cc03afcc',1,'ListaDwukierunkowa']]],
+  ['usunzkonca_2',['usunZKonca',['../class_lista_dwukierunkowa.html#ae16019e77d4e2279eb87c84727e28a9a',1,'ListaDwukierunkowa']]],
+  ['usunzpoczatku_3',['usunZPoczatku',['../class_lista_dwukierunkowa.html#a5bfcb0897a5ab20529177642806dc131',1,'ListaDwukierunkowa']]],
+  ['utworz_4',['utworz',['../class_fabryka.html#af83e76e4b9a27fce714550b70bb6b4c8',1,'Fabryka']]]
 ];

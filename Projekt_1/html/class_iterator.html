@@ -111,19 +111,26 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('class_iterator
   <div class="headertitle"><div class="title">Iterator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Klasa realizuj¹ca wzorzec projektowy <a class="el" href="class_iterator.html" title="Klasa realizuj¹ca wzorzec projektowy Iterator dla listy dwukierunkowej.">Iterator</a> dla listy dwukierunkowej.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_iterator_8h_source.html">Iterator.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a61c1fa7c5bc1e791e905b2387af6f16e" id="r_a61c1fa7c5bc1e791e905b2387af6f16e"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a61c1fa7c5bc1e791e905b2387af6f16e">Iterator</a> (<a class="el" href="class_element.html">Element</a> *start=nullptr)</td></tr>
-<tr class="memdesc:a61c1fa7c5bc1e791e905b2387af6f16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy iterator wskazuj¹cy na podany <a class="el" href="class_element.html" title="Tworzy nowy Element listy.">Element</a>.  <br /></td></tr>
+<tr class="memdesc:a61c1fa7c5bc1e791e905b2387af6f16e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy iterator wskazuj¹cy na podany element.  <br /></td></tr>
 <tr class="memitem:a88624b506aa3871d31e93f84d1fcd486" id="r_a88624b506aa3871d31e93f84d1fcd486"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a88624b506aa3871d31e93f84d1fcd486">ustaw</a> (<a class="el" href="class_element.html">Element</a> *wezel)</td></tr>
-<tr class="memdesc:a88624b506aa3871d31e93f84d1fcd486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia iterator na wskazanym Elemencie.  <br /></td></tr>
+<tr class="memdesc:a88624b506aa3871d31e93f84d1fcd486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ustawia iterator na wskazanym elemencie.  <br /></td></tr>
 <tr class="memitem:a36d43b100abf5fdfbecec3dd33643449" id="r_a36d43b100abf5fdfbecec3dd33643449"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a36d43b100abf5fdfbecec3dd33643449">nastepny</a> (int &amp;wartosc)</td></tr>
-<tr class="memdesc:a36d43b100abf5fdfbecec3dd33643449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca wartoœæ bie¿¹cego elementu i przesuwa iterator do przodu.  <br /></td></tr>
+<tr class="memdesc:a36d43b100abf5fdfbecec3dd33643449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odczytuje bie¿¹cy element i przesuwa iterator do przodu.  <br /></td></tr>
 <tr class="memitem:a121701524d429b948855ba56ff5301e3" id="r_a121701524d429b948855ba56ff5301e3"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a121701524d429b948855ba56ff5301e3">poprzedni</a> (int &amp;wartosc)</td></tr>
-<tr class="memdesc:a121701524d429b948855ba56ff5301e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca wartoœæ bie¿¹cego elementu i przesuwa iterator do ty³u.  <br /></td></tr>
+<tr class="memdesc:a121701524d429b948855ba56ff5301e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odczytuje bie¿¹cy element i przesuwa iterator do ty³u.  <br /></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Klasa realizuj¹ca wzorzec projektowy <a class="el" href="class_iterator.html" title="Klasa realizuj¹ca wzorzec projektowy Iterator dla listy dwukierunkowej.">Iterator</a> dla listy dwukierunkowej. </p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a61c1fa7c5bc1e791e905b2387af6f16e" name="a61c1fa7c5bc1e791e905b2387af6f16e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61c1fa7c5bc1e791e905b2387af6f16e">&#9670;&#160;</a></span>Iterator()</h2>
 
@@ -142,15 +149,16 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel explicit">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Tworzy iterator wskazuj¹cy na podany <a class="el" href="class_element.html" title="Tworzy nowy Element listy.">Element</a>. </p>
+<p>Tworzy iterator wskazuj¹cy na podany element. </p>
+<p>Inicjalizuje iterator wskazuj¹cy na podany element.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">start</td><td>Pocz¹tkowy <a class="el" href="class_element.html" title="Tworzy nowy Element listy.">Element</a> iteratora. </td></tr>
+    <tr><td class="paramname">start</td><td>Pocz¹tkowy element iteratora. </td></tr>
   </table>
   </dd>
 </dl>
@@ -163,9 +171,6 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Iterator::nastepny </td>
@@ -174,14 +179,10 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Zwraca wartoœæ bie¿¹cego elementu i przesuwa iterator do przodu. </p>
+<p>Odczytuje bie¿¹cy element i przesuwa iterator do przodu. </p>
+<p>Odczytuje wartoœæ bie¿¹cego elementu i przesuwa iterator do przodu.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wartosc</td><td>Zmienna przechowuj¹ca odczytan¹ wartoœæ. </td></tr>
@@ -197,9 +198,6 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Iterator::poprzedni </td>
@@ -208,14 +206,10 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Zwraca wartoœæ bie¿¹cego elementu i przesuwa iterator do ty³u. </p>
+<p>Odczytuje bie¿¹cy element i przesuwa iterator do ty³u. </p>
+<p>Odczytuje wartoœæ bie¿¹cego elementu i przesuwa iterator do ty³u.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">wartosc</td><td>Zmienna przechowuj¹ca odczytan¹ wartoœæ. </td></tr>
@@ -231,9 +225,6 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Iterator::ustaw </td>
@@ -242,25 +233,21 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Ustawia iterator na wskazanym Elemencie. </p>
+<p>Ustawia iterator na wskazanym elemencie. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wezel</td><td><a class="el" href="class_element.html" title="Tworzy nowy Element listy.">Element</a>, na który ma wskazywaæ iterator. </td></tr>
+    <tr><td class="paramname">wezel</td><td><a class="el" href="class_element.html" title="Klasa przechowuj¹ca wartoœci i pe³ni¹ca funkcjê elementu listy dwukierunkowej.">Element</a>, na który ma wskazywaæ iterator. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>Projekt_1/<a class="el" href="_iterator_8cpp_source.html">Iterator.cpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>Projekt_1/<a class="el" href="_iterator_8h_source.html">Iterator.h</a></li>
+<li>Projekt_1/<b>Iterator.cpp</b></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
