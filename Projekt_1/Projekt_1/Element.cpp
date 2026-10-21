@@ -1,14 +1,11 @@
-#pragma once
-/**
- * @brief Tworzy nowy Element listy.
- * @param wartosc Wartoœæ przechowywana w Elemencie.
- */
-//Klasa która przechowóje wartoœci i jest wykorzystywana jako element listy
-class Element {
-public:
-    int wartosc;
-    Element* poprzedni;
-    Element* nastepny;
+#include "Element.h"
 
-    Element(int wartosc) : wartosc(wartosc), poprzedni(nullptr), nastepny(nullptr) {}
-};
+/**
+ * @brief Inicjalizuje nowy element listy.
+ * @param wartosc Wartoœæ przechowywana w elemencie.
+ */
+Element::Element(int wartosc)
+    : wartosc(wartosc),
+    poprzedni(nullptr),
+    nastepny(nullptr) {
+}

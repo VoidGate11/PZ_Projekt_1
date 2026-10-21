@@ -129,6 +129,12 @@
     <ClCompile Include="ListaDwukierunkowa.cpp" />
     <ClCompile Include="Projekt_1.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Element.h" />
+    <ClInclude Include="Fabryka.h" />
+    <ClInclude Include="Iterator.h" />
+    <ClInclude Include="ListaDwukierunkowa.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

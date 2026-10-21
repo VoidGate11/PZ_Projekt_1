@@ -1,56 +1,51 @@
-#pragma once
+#include "Iterator.h"
 
-#include "Element.cpp"
+/**
+ * @brief Inicjalizuje iterator wskazuj¹cy na podany element.
+ * @param start Pocz¹tkowy element iteratora.
+ */
+Iterator::Iterator(Element* start)
+    : aktualny(start) {
+}
 
-//Klasa która jest iteratorem
-class Iterator {
-private:
-    Element* aktualny;
+/**
+ * @brief Ustawia iterator na wskazanym elemencie.
+ * @param wezel Element, na który ma wskazywaæ iterator.
+ */
+void Iterator::ustaw(Element* wezel) {
+    aktualny = wezel;
+}
 
-public:
-    /**
-     * @brief Tworzy iterator wskazuj¹cy na podany Element.
-     * @param start Pocz¹tkowy Element iteratora.
-     */
-    explicit Iterator(Element* start = nullptr)
-        : aktualny(start) {
+/**
+ * @brief Odczytuje wartoœæ bie¿¹cego elementu
+ * i przesuwa iterator do przodu.
+ * @param wartosc Zmienna przechowuj¹ca odczytan¹ wartoœæ.
+ * @return true, jeœli odczytano element, w przeciwnym razie false.
+ */
+bool Iterator::nastepny(int& wartosc) {
+    if (aktualny == nullptr) {
+        return false;
     }
 
-    /**
-     * @brief Ustawia iterator na wskazanym Elemencie.
-     * @param wezel Element, na który ma wskazywaæ iterator.
-     */
-    void ustaw(Element* wezel) {
-        aktualny = wezel;
+    wartosc = aktualny->wartosc;
+    aktualny = aktualny->nastepny;
+
+    return true;
+}
+
+/**
+ * @brief Odczytuje wartoœæ bie¿¹cego elementu
+ * i przesuwa iterator do ty³u.
+ * @param wartosc Zmienna przechowuj¹ca odczytan¹ wartoœæ.
+ * @return true, jeœli odczytano element, w przeciwnym razie false.
+ */
+bool Iterator::poprzedni(int& wartosc) {
+    if (aktualny == nullptr) {
+        return false;
     }
 
-    /**
-     * @brief Zwraca wartoœæ bie¿¹cego elementu i przesuwa iterator do przodu.
-     * @param wartosc Zmienna przechowuj¹ca odczytan¹ wartoœæ.
-     * @return true, jeœli odczytano element, w przeciwnym razie false.
-     */
-    bool nastepny(int& wartosc) {
-        if (aktualny == nullptr) {
-            return false;
-        }
+    wartosc = aktualny->wartosc;
+    aktualny = aktualny->poprzedni;
 
-        wartosc = aktualny->wartosc;
-        aktualny = aktualny->nastepny;
-        return true;
-    }
-
-    /**
-     * @brief Zwraca wartoœæ bie¿¹cego elementu i przesuwa iterator do ty³u.
-     * @param wartosc Zmienna przechowuj¹ca odczytan¹ wartoœæ.
-     * @return true, jeœli odczytano element, w przeciwnym razie false.
-     */
-    bool poprzedni(int& wartosc) {
-        if (aktualny == nullptr) {
-            return false;
-        }
-
-        wartosc = aktualny->wartosc;
-        aktualny = aktualny->poprzedni;
-        return true;
-    }
-};
+    return true;
+}

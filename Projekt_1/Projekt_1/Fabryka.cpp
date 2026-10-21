@@ -1,15 +1,10 @@
-#pragma once
+#include "Fabryka.h"
 
-#include "Element.cpp"
 /**
- * @brief Tworzy nowy Element za pomoc¹ operatora new.
- * @param wartosc Wartoœæ przechowywana w Elemencie.
- * @return WskaŸnik na utworzony Element.
+ * @brief Tworzy nowy obiekt Element.
+ * @param wartosc Wartoœæ przechowywana w elemencie.
+ * @return WskaŸnik na nowo utworzony element.
  */
-//Klasa która tworzy obiekty Element metod¹ fabryki
-class Fabryka {
-public:
-    static Element* utworz(int wartosc) {
-        return new Element(wartosc);
-    }
-};
+Element* Fabryka::utworz(int wartosc) {
+    return new Element(wartosc);
+}

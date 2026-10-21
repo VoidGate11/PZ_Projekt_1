@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-#include "ListaDwukierunkowa.cpp"
+#include "ListaDwukierunkowa.h"
 
 using namespace std;
 
